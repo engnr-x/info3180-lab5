@@ -1,4 +1,3 @@
-# Add any form classes for Flask-WTF here
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileRequired, FileAllowed
 from wtforms import StringField, TextAreaField
@@ -12,3 +11,5 @@ class MovieForm(FlaskForm):
             FileRequired(),
             FileAllowed(['jpg', 'png'], 'Images only!')
         ])
+
+    

@@ -9,10 +9,9 @@ class Movie(db.Model):
     title = db.Column(db.String(80))
     description = db.Column(db.Text)
     poster = db.Column(db.String(80))
-    created_at = db.Column(db.date)
-    created_at = db.Column(db.date)
+    created_at = db.Column(db.Date)
 
-    def __init__(self, title, description, poster,created_at):
+    def __init__(self, title, description, poster):
         self.title = title
         self.description = description
         self.poster = poster
